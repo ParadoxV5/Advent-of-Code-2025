@@ -1,0 +1,7 @@
+# VSCode
+.vscode/
+# Ruby
+Gemfile.lock
+
+# Advent of Code
+*input*
