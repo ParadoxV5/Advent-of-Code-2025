@@ -1,6 +1,6 @@
 # Reference: https://math.stackexchange.com/a/1867261
 # When turning `L`eft, instead of adjusting by 1 for the edge cases at `0`,
-# this implementation uses negated Integer#divmod to demonstrate understanding.
+# this implementation uses negated {Integer#divmod} to demonstrate understanding.
 
 part1 = part2 = 0
 dial = 50
