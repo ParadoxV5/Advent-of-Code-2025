@@ -4,5 +4,5 @@ PART2 = true
 regexp = /\A(\d+?)\1#{'+' if PART2}\z/
 puts(ARGF.each(',').sum do|range|
   first, last = range.split('-').map(&:to_i) #: [Integer, Integer]
-  (first..last).sum { _1.to_s.match?(regexp) ? _1 : 0 }
+  (first..last).sum { it.to_s.match?(regexp) ? it : 0 }
 end)

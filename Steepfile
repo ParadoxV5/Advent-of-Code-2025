@@ -3,7 +3,7 @@ target '00' do
   signature '*.rbs'
 end
 
-(1..2).each do|day|
+(1..3).each do|day|
   id = day.to_s.rjust 2, '0'
   target id do
     glob = File.join "#{id}*", '**', ''
