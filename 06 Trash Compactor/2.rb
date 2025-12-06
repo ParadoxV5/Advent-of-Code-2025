@@ -6,6 +6,6 @@ puts(ARGF.each_line.map(&:chars)
   .slice_after(&:empty?)
   .sum do|*operands, _column_delimiter|
     operator = operands.first.pop #: String
-    operands.map { Integer(it.join) }.inject operator.to_sym
+    operands.map { Integer(it.join) }.inject operator
   end
 )

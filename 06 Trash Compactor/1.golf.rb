@@ -1,1 +1,1 @@
-p$<.map(&:split).transpose.sum{|*n,o|n.map(&:to_i).inject:"#{o}"}
+p$<.map(&:split).transpose.sum{|*n,o|n.map(&:to_i).inject o}

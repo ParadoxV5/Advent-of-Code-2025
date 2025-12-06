@@ -1,1 +1,1 @@
-p$<.map(&:chars).transpose.map{it*''}.chunk{/\d/===it}.sum{_1 ?_2.map(&:to_i).inject(:"#{_2[0][~0]}"):0}
+p$<.map(&:chars).transpose.map{it*''}.chunk{/\d/===it}.sum{_1 ?_2.map(&:to_i).inject(_2[0][~0]):0}
