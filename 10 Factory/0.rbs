@@ -1,0 +1,14 @@
+type joltages = Array[Integer]
+type combination = [
+  Integer, # press count
+  joltages
+]
+type combinations = Hash[
+  String, # parity index in the form of lights
+  Array[combination]
+]
+
+class Object
+  def joltages2lights: (joltages) -> String
+  def bifurcate: (Array[Integer] joltages, combinations) -> Integer?
+end
