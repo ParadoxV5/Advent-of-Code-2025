@@ -8,7 +8,7 @@ puts(ARGF.each_line(chomp: true).sum do|bank|
     if battery >= digits[0]
       # Find the most wasted high place value
       index = digits.each_char
-        .each_cons(2) #: Enumerator[[String, String], Enumerator[String, String]]
+        .each_cons(2) #: Enumerator[[String, String], bot]
         .find_index { _1 < _2 } || ~0
       digits[1..index] = (
         digits[...index] #: String
